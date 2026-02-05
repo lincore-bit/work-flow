@@ -3,80 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>How I Work — Traffic → Monetization Systems</title>
+  <title>How I Work — Visual</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <main class="page">
+<main class="page">
 
-    <!-- ================= TABOOLA FLOW ================= -->
-    <section class="flow">
-      <div class="node lincoln">LINCOLN</div>
-      <div class="node source taboola">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Taboola_Logo.svg" alt="Taboola">
-      </div>
-      <div class="cloud">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/NBC_logo.svg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Business_Insider_Logo.svg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Bloomberg_logo.svg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/NDTV_logo.svg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/India_Today_logo.svg">
-      </div>
-      <div class="node monetize">Google / Yahoo</div>
+  <!-- ========== TABOOLA ========== -->
+  <section class="flow">
+    <div class="node lincoln">LINCOLN</div>
+    <div class="node source">TABOOLA</div>
 
-      <svg class="lines" viewBox="0 0 1200 420">
-        <!-- BUY -->
-        <path d="M220 210 C 330 210, 380 210, 470 210" class="buy"/>
-        <!-- DISTRIBUTE -->
-        <path d="M560 210 C 690 150, 760 140, 850 150"/>
-        <path d="M560 210 C 690 210, 760 210, 850 210"/>
-        <path d="M560 210 C 690 270, 760 280, 850 270"/>
-        <!-- REVENUE -->
-        <path d="M930 210 C 1010 210, 1080 210, 1150 210" class="rev"/>
-      </svg>
-    </section>
+    <div class="cloud">
+      <div class="pub">NBC</div>
+      <div class="pub">BLOOMBERG</div>
+      <div class="pub">BUSINESS INSIDER</div>
+      <div class="pub">NDTV</div>
+      <div class="pub">INDIA TODAY</div>
+    </div>
 
-    <!-- ================= OUTBRAIN FLOW ================= -->
-    <section class="flow">
-      <div class="node lincoln">LINCOLN</div>
-      <div class="node source outbrain">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Outbrain_logo.svg" alt="Outbrain">
-      </div>
-      <div class="cloud">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/CBS_logo.svg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/USA_Today_logo.svg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/The_Weather_Channel_logo.svg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/The_Hindu_Logo.svg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Indian_Express_logo.svg">
-      </div>
-      <div class="node monetize">Google / Yahoo</div>
+    <div class="node monetize">GOOGLE / YAHOO</div>
 
-      <svg class="lines" viewBox="0 0 1200 420">
-        <path d="M220 210 C 330 210, 380 210, 470 210" class="buy"/>
-        <path d="M560 210 C 690 160, 760 150, 850 160"/>
-        <path d="M560 210 C 690 260, 760 270, 850 260"/>
-        <path d="M930 210 C 1010 210, 1080 210, 1150 210" class="rev"/>
-      </svg>
-    </section>
+    <svg class="lines" viewBox="0 0 1200 420">
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L6,3 z" fill="#64748b"/>
+        </marker>
+        <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L6,3 z" fill="#22c55e"/>
+        </marker>
+      </defs>
 
-    <!-- ================= GOOGLE SEARCH FLOW ================= -->
-    <section class="flow search">
-      <div class="node source google">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
-      </div>
-      <div class="node lincoln center">LINCOLN</div>
-      <div class="node monetize">Google / Yahoo</div>
+      <!-- BUY -->
+      <path d="M220 210 C 340 210, 390 210, 470 210"
+            class="buy" marker-end="url(#arrow)"/>
+      <text x="320" y="190" class="label">BUY TRAFFIC</text>
 
-      <svg class="lines" viewBox="0 0 1200 300">
-        <!-- INTENT -->
-        <path d="M200 150 C 350 150, 420 150, 520 150"/>
-        <!-- REVENUE -->
-        <path d="M680 150 C 820 150, 920 150, 1100 150" class="rev"/>
-      </svg>
-    </section>
+      <!-- DISTRIBUTION -->
+      <path d="M560 210 C 690 150, 760 140, 850 150"/>
+      <path d="M560 210 C 690 210, 760 210, 850 210"/>
+      <path d="M560 210 C 690 270, 760 280, 850 270"/>
 
-  </main>
+      <!-- REVENUE -->
+      <path d="M930 210 C 1030 210, 1080 210, 1150 210"
+            class="rev" marker-end="url(#arrow-green)"/>
+      <text x="1010" y="190" class="label green">REV / PROFIT</text>
+    </svg>
+  </section>
+
+  <!-- ========== OUTBRAIN ========== -->
+  <section class="flow">
+    <div class="node lincoln">LINCOLN</div>
+    <div class="node source">OUTBRAIN</div>
+
+    <div class="cloud">
+      <div class="pub">USA TODAY</div>
+      <div class="pub">CBS</div>
+      <div class="pub">WEATHER CHANNEL</div>
+      <div class="pub">THE HINDU</div>
+      <div class="pub">INDIAN EXPRESS</div>
+    </div>
+
+    <div class="node monetize">GOOGLE / YAHOO</div>
+
+    <svg class="lines" viewBox="0 0 1200 420">
+      <path d="M220 210 C 340 210, 390 210, 470 210"
+            class="buy" marker-end="url(#arrow)"/>
+      <path d="M560 210 C 690 160, 760 150, 850 160"/>
+      <path d="M560 210 C 690 260, 760 270, 850 260"/>
+      <path d="M930 210 C 1030 210, 1080 210, 1150 210"
+            class="rev" marker-end="url(#arrow-green)"/>
+    </svg>
+  </section>
+
+  <!-- ========== GOOGLE SEARCH (FIXED) ========== -->
+  <section class="flow search">
+    <div class="node source left">GOOGLE SEARCH</div>
+    <div class="node lincoln center">LINCOLN</div>
+    <div class="node monetize">GOOGLE / YAHOO</div>
+
+    <svg class="lines" viewBox="0 0 1200 260">
+      <!-- INTENT -->
+      <path d="M200 130 C 360 130, 430 130, 520 130"
+            marker-end="url(#arrow)"/>
+      <text x="330" y="110" class="label">USER INTENT</text>
+
+      <!-- REVENUE -->
+      <path d="M680 130 C 840 130, 940 130, 1100 130"
+            class="rev" marker-end="url(#arrow-green)"/>
+      <text x="850" y="110" class="label green">REV / PROFIT</text>
+    </svg>
+  </section>
+
+</main>
 
 </body>
 </html>
