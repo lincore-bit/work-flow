@@ -3,49 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>How It Works — Native Advertising</title>
+  <title>How I Work — Traffic → Monetization Systems</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <main class="canvas">
+  <main class="page">
 
-    <!-- LINCOLN -->
-    <div class="node lincoln">
-      LINCOLN
-    </div>
+    <!-- ================= TABOOLA FLOW ================= -->
+    <section class="flow">
+      <div class="node lincoln">LINCOLN</div>
+      <div class="node source taboola">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Taboola_Logo.svg" alt="Taboola">
+      </div>
+      <div class="cloud">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/NBC_logo.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Business_Insider_Logo.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Bloomberg_logo.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/NDTV_logo.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/India_Today_logo.svg">
+      </div>
+      <div class="node monetize">Google / Yahoo</div>
 
-    <!-- TABOOLA -->
-    <div class="node taboola">
-      TABOOLA
-    </div>
+      <svg class="lines" viewBox="0 0 1200 420">
+        <!-- BUY -->
+        <path d="M220 210 C 330 210, 380 210, 470 210" class="buy"/>
+        <!-- DISTRIBUTE -->
+        <path d="M560 210 C 690 150, 760 140, 850 150"/>
+        <path d="M560 210 C 690 210, 760 210, 850 210"/>
+        <path d="M560 210 C 690 270, 760 280, 850 270"/>
+        <!-- REVENUE -->
+        <path d="M930 210 C 1010 210, 1080 210, 1150 210" class="rev"/>
+      </svg>
+    </section>
 
-    <!-- PUBLISHER CLOUD -->
-    <div class="publishers">
-      <div class="publisher">NBC</div>
-      <div class="publisher">Bloomberg</div>
-      <div class="publisher">Business Insider</div>
-      <div class="publisher">USA Today</div>
-      <div class="publisher">NDTV</div>
-      <div class="publisher">India Today</div>
-    </div>
+    <!-- ================= OUTBRAIN FLOW ================= -->
+    <section class="flow">
+      <div class="node lincoln">LINCOLN</div>
+      <div class="node source outbrain">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Outbrain_logo.svg" alt="Outbrain">
+      </div>
+      <div class="cloud">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/CBS_logo.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/USA_Today_logo.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/The_Weather_Channel_logo.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/The_Hindu_Logo.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Indian_Express_logo.svg">
+      </div>
+      <div class="node monetize">Google / Yahoo</div>
 
-    <!-- MONETIZATION -->
-    <div class="node monetize">
-      Google / Yahoo
-    </div>
+      <svg class="lines" viewBox="0 0 1200 420">
+        <path d="M220 210 C 330 210, 380 210, 470 210" class="buy"/>
+        <path d="M560 210 C 690 160, 760 150, 850 160"/>
+        <path d="M560 210 C 690 260, 760 270, 850 260"/>
+        <path d="M930 210 C 1010 210, 1080 210, 1150 210" class="rev"/>
+      </svg>
+    </section>
 
-    <!-- SVG CONNECTORS -->
-    <svg class="lines" viewBox="0 0 1200 500" preserveAspectRatio="none">
-      <!-- Lincoln → Taboola -->
-      <path d="M180 250 C 300 250, 350 250, 450 250" />
-      <!-- Taboola → Publishers -->
-      <path d="M520 250 C 650 180, 720 150, 820 170" />
-      <path d="M520 250 C 650 260, 720 250, 820 240" />
-      <path d="M520 250 C 650 330, 720 360, 820 330" />
-      <!-- Publishers → Monetization -->
-      <path d="M900 250 C 980 250, 1030 250, 1100 250" />
-    </svg>
+    <!-- ================= GOOGLE SEARCH FLOW ================= -->
+    <section class="flow search">
+      <div class="node source google">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
+      </div>
+      <div class="node lincoln center">LINCOLN</div>
+      <div class="node monetize">Google / Yahoo</div>
+
+      <svg class="lines" viewBox="0 0 1200 300">
+        <!-- INTENT -->
+        <path d="M200 150 C 350 150, 420 150, 520 150"/>
+        <!-- REVENUE -->
+        <path d="M680 150 C 820 150, 920 150, 1100 150" class="rev"/>
+      </svg>
+    </section>
 
   </main>
 
