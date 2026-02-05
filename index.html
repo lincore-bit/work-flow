@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How It Works — Native Advertising</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="canvas">
+
+    <!-- LINCOLN -->
+    <div class="node lincoln">
+      LINCOLN
+    </div>
+
+    <!-- TABOOLA -->
+    <div class="node taboola">
+      TABOOLA
+    </div>
+
+    <!-- PUBLISHER CLOUD -->
+    <div class="publishers">
+      <div class="publisher">NBC</div>
+      <div class="publisher">Bloomberg</div>
+      <div class="publisher">Business Insider</div>
+      <div class="publisher">USA Today</div>
+      <div class="publisher">NDTV</div>
+      <div class="publisher">India Today</div>
+    </div>
+
+    <!-- MONETIZATION -->
+    <div class="node monetize">
+      Google / Yahoo
+    </div>
+
+    <!-- SVG CONNECTORS -->
+    <svg class="lines" viewBox="0 0 1200 500" preserveAspectRatio="none">
+      <!-- Lincoln → Taboola -->
+      <path d="M180 250 C 300 250, 350 250, 450 250" />
+      <!-- Taboola → Publishers -->
+      <path d="M520 250 C 650 180, 720 150, 820 170" />
+      <path d="M520 250 C 650 260, 720 250, 820 240" />
+      <path d="M520 250 C 650 330, 720 360, 820 330" />
+      <!-- Publishers → Monetization -->
+      <path d="M900 250 C 980 250, 1030 250, 1100 250" />
+    </svg>
+
+  </main>
+
+</body>
+</html>
