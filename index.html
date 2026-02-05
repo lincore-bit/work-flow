@@ -9,47 +9,119 @@
 
 <main class="page">
 
-  <!-- ================= TABOOLA FLOW ================= -->
+  <!-- ======================================================
+       TABOOLA
+  ======================================================= -->
   <section class="flow">
 
-    <!-- NODES -->
     <div class="node lincoln">LINCOLN</div>
-    <div class="node source taboola">TABOOLA</div>
+    <div class="node source">TABOOLA</div>
 
-    <!-- PUBLISHERS -->
     <div class="publisher p1">NBC</div>
     <div class="publisher p2">BLOOMBERG</div>
     <div class="publisher p3">BUSINESS INSIDER</div>
     <div class="publisher p4">NDTV</div>
 
-    <!-- MONETIZATION -->
     <div class="node monetize">GOOGLE / YAHOO</div>
 
-    <!-- LINES -->
     <svg class="lines" viewBox="0 0 1200 420">
-
-      <!-- BUY: LINCOLN → TABOOLA -->
-      <path d="M140 210 C 260 120, 360 120, 480 200"
-            class="buy"/>
+      <!-- BUY -->
+      <path d="M140 210 C 260 120, 360 120, 480 200" class="buy"/>
       <text x="260" y="120" class="label buy-label">BUY TRAFFIC</text>
 
-      <!-- TABOOLA → PUBLISHERS -->
+      <!-- SOURCE → PUBLISHERS -->
       <path d="M520 200 C 640 120, 700 100, 760 100"/>
       <path d="M520 200 C 640 160, 700 160, 760 160"/>
       <path d="M520 200 C 640 240, 700 240, 760 240"/>
       <path d="M520 200 C 640 300, 700 300, 760 300"/>
 
-      <!-- PUBLISHERS → GOOGLE / YAHOO -->
+      <!-- PUBLISHERS → MONETIZATION -->
       <path d="M760 100 C 860 160, 940 190, 1020 210"/>
       <path d="M760 160 C 860 190, 940 205, 1020 210"/>
       <path d="M760 240 C 860 220, 940 215, 1020 210"/>
       <path d="M760 300 C 860 250, 940 230, 1020 210"/>
 
-      <!-- REV: GOOGLE / YAHOO → LINCOLN -->
-      <path d="M1020 260 C 760 360, 360 360, 140 250"
-            class="rev"/>
+      <!-- REV -->
+      <path d="M1020 260 C 760 360, 360 360, 140 250" class="rev"/>
       <text x="520" y="380" class="label rev-label">REV / PROFIT</text>
+    </svg>
 
+  </section>
+
+  <!-- ======================================================
+       OUTBRAIN
+  ======================================================= -->
+  <section class="flow">
+
+    <div class="node lincoln">LINCOLN</div>
+    <div class="node source">OUTBRAIN</div>
+
+    <div class="publisher p1">USA TODAY</div>
+    <div class="publisher p2">CBS</div>
+    <div class="publisher p3">WEATHER CHANNEL</div>
+    <div class="publisher p4">THE HINDU</div>
+
+    <div class="node monetize">GOOGLE / YAHOO</div>
+
+    <svg class="lines" viewBox="0 0 1200 420">
+      <!-- BUY -->
+      <path d="M140 210 C 260 120, 360 120, 480 200" class="buy"/>
+      <text x="260" y="120" class="label buy-label">BUY TRAFFIC</text>
+
+      <!-- SOURCE → PUBLISHERS -->
+      <path d="M520 200 C 640 120, 700 100, 760 100"/>
+      <path d="M520 200 C 640 160, 700 160, 760 160"/>
+      <path d="M520 200 C 640 240, 700 240, 760 240"/>
+      <path d="M520 200 C 640 300, 700 300, 760 300"/>
+
+      <!-- PUBLISHERS → MONETIZATION -->
+      <path d="M760 100 C 860 160, 940 190, 1020 210"/>
+      <path d="M760 160 C 860 190, 940 205, 1020 210"/>
+      <path d="M760 240 C 860 220, 940 215, 1020 210"/>
+      <path d="M760 300 C 860 250, 940 230, 1020 210"/>
+
+      <!-- REV -->
+      <path d="M1020 260 C 760 360, 360 360, 140 250" class="rev"/>
+      <text x="520" y="380" class="label rev-label">REV / PROFIT</text>
+    </svg>
+
+  </section>
+
+  <!-- ======================================================
+       GOOGLE ADS
+  ======================================================= -->
+  <section class="flow">
+
+    <div class="node lincoln">LINCOLN</div>
+    <div class="node source">GOOGLE ADS</div>
+
+    <div class="publisher p1">SEARCH</div>
+    <div class="publisher p2">DISPLAY</div>
+    <div class="publisher p3">PMAX</div>
+    <div class="publisher p4">DISCOVERY</div>
+
+    <div class="node monetize">GOOGLE / YAHOO</div>
+
+    <svg class="lines" viewBox="0 0 1200 420">
+      <!-- BUY -->
+      <path d="M140 210 C 260 120, 360 120, 480 200" class="buy"/>
+      <text x="260" y="120" class="label buy-label">BUY TRAFFIC</text>
+
+      <!-- GOOGLE ADS → INVENTORY -->
+      <path d="M520 200 C 640 120, 700 100, 760 100"/>
+      <path d="M520 200 C 640 160, 700 160, 760 160"/>
+      <path d="M520 200 C 640 240, 700 240, 760 240"/>
+      <path d="M520 200 C 640 300, 700 300, 760 300"/>
+
+      <!-- INVENTORY → MONETIZATION -->
+      <path d="M760 100 C 860 160, 940 190, 1020 210"/>
+      <path d="M760 160 C 860 190, 940 205, 1020 210"/>
+      <path d="M760 240 C 860 220, 940 215, 1020 210"/>
+      <path d="M760 300 C 860 250, 940 230, 1020 210"/>
+
+      <!-- REV -->
+      <path d="M1020 260 C 760 360, 360 360, 140 250" class="rev"/>
+      <text x="520" y="380" class="label rev-label">REV / PROFIT</text>
     </svg>
 
   </section>
