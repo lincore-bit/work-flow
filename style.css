@@ -107,3 +107,12 @@ body {
 
 .buy-label { fill: #93c5fd; }
 .rev-label { fill: #22c55e; }
+.lines path {
+  stroke: #94a3b8;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.lines path.rev {
+  stroke: #22c55e;
+}
