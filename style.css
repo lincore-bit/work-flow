@@ -6,17 +6,27 @@
 }
 
 body {
-  background: #f7f8fa;
-  color: #111;
+  background: radial-gradient(1200px 500px at 20% -10%, rgba(59,130,246,0.15), transparent),
+              #0b0e11;
+  color: #e5e7eb;
 }
 
-/* MAIN CANVAS */
-.canvas {
-  position: relative;
-  width: 100%;
+/* PAGE */
+.page {
   max-width: 1200px;
-  height: 500px;
-  margin: 80px auto;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* FLOW BLOCK */
+.flow {
+  position: relative;
+  height: 420px;
+  margin-bottom: 120px;
+}
+
+.flow.search {
+  height: 300px;
 }
 
 /* NODES */
@@ -25,52 +35,72 @@ body {
   padding: 14px 22px;
   border-radius: 999px;
   font-weight: 600;
-  background: #ffffff;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  background: #111827;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
   z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.node:hover {
+  transform: translateY(-4px);
 }
 
 /* LINCOLN */
 .lincoln {
   left: 40px;
-  top: 220px;
-  background: #3b82f6;
-  color: white;
+  top: 190px;
+  background: #2563eb;
 }
 
-/* TABOOLA */
-.taboola {
-  left: 420px;
-  top: 220px;
+.lincoln.center {
+  left: 520px;
 }
+
+/* SOURCES */
+.source {
+  left: 460px;
+  top: 190px;
+  background: #0f172a;
+}
+
+.source img {
+  height: 22px;
+}
+
+.taboola img { height: 24px; }
+.outbrain img { height: 24px; }
+.google img { height: 26px; }
 
 /* MONETIZATION */
 .monetize {
   right: 40px;
-  top: 220px;
+  top: 190px;
 }
 
-/* PUBLISHERS */
-.publishers {
+/* CLOUD */
+.cloud {
   position: absolute;
-  left: 750px;
-  top: 120px;
+  left: 740px;
+  top: 110px;
   width: 260px;
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 18px;
   z-index: 2;
 }
 
-.publisher {
-  padding: 8px 14px;
-  background: #ffffff;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+.cloud img {
+  height: 20px;
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* SVG LINES */
+.cloud img:hover {
+  transform: translateY(-4px);
+  opacity: 1;
+}
+
+/* LINES */
 .lines {
   position: absolute;
   inset: 0;
@@ -79,6 +109,15 @@ body {
 
 .lines path {
   fill: none;
-  stroke: #94a3b8;
-  stroke-width: 1.5;
+  stroke: #64748b;
+  stroke-width: 1.4;
+}
+
+.lines path.buy {
+  stroke-dasharray: 6 6;
+}
+
+.lines path.rev {
+  stroke: #22c55e;
+  stroke-width: 1.8;
 }
