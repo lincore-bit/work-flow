@@ -1,98 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>How I Work — Visual</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>How I Work – Visual Systems</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <main class="page">
 
-  <!-- ========== TABOOLA ========== -->
+  <!-- ===== TABOOLA ===== -->
   <section class="flow">
     <div class="node lincoln">LINCOLN</div>
-    <div class="node source">TABOOLA</div>
+    <div class="node source taboola">TABOOLA</div>
 
-    <div class="cloud">
-      <div class="pub">NBC</div>
-      <div class="pub">BLOOMBERG</div>
-      <div class="pub">BUSINESS INSIDER</div>
-      <div class="pub">NDTV</div>
-      <div class="pub">INDIA TODAY</div>
-    </div>
+    <div class="publisher p1">NBC</div>
+    <div class="publisher p2">BLOOMBERG</div>
+    <div class="publisher p3">BUSINESS INSIDER</div>
+    <div class="publisher p4">NDTV</div>
 
     <div class="node monetize">GOOGLE / YAHOO</div>
 
     <svg class="lines" viewBox="0 0 1200 420">
-      <defs>
-        <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
-          <path d="M0,0 L0,6 L6,3 z" fill="#64748b"/>
-        </marker>
-        <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
-          <path d="M0,0 L0,6 L6,3 z" fill="#22c55e"/>
-        </marker>
-      </defs>
-
       <!-- BUY -->
-      <path d="M220 210 C 340 210, 390 210, 470 210"
-            class="buy" marker-end="url(#arrow)"/>
-      <text x="320" y="190" class="label">BUY TRAFFIC</text>
+      <path d="M140 210 C 240 120, 360 120, 480 200" class="buy"/>
+      <text x="260" y="120" class="label buy-label">BUY TRAFFIC</text>
 
-      <!-- DISTRIBUTION -->
-      <path d="M560 210 C 690 150, 760 140, 850 150"/>
-      <path d="M560 210 C 690 210, 760 210, 850 210"/>
-      <path d="M560 210 C 690 270, 760 280, 850 270"/>
+      <!-- PUB → MONETIZE -->
+      <path d="M760 120 C 860 180, 940 200, 1020 210"/>
+      <path d="M760 170 C 860 200, 940 210, 1020 210"/>
+      <path d="M760 240 C 860 230, 940 220, 1020 210"/>
+      <path d="M760 290 C 860 250, 940 230, 1020 210"/>
 
-      <!-- REVENUE -->
-      <path d="M930 210 C 1030 210, 1080 210, 1150 210"
-            class="rev" marker-end="url(#arrow-green)"/>
-      <text x="1010" y="190" class="label green">REV / PROFIT</text>
+      <!-- REV -->
+      <path d="M1020 260 C 760 360, 360 360, 140 250" class="rev"/>
+      <text x="520" y="380" class="label rev-label">REV / PROFIT</text>
     </svg>
   </section>
 
-  <!-- ========== OUTBRAIN ========== -->
+  <!-- ===== OUTBRAIN ===== -->
   <section class="flow">
     <div class="node lincoln">LINCOLN</div>
-    <div class="node source">OUTBRAIN</div>
+    <div class="node source outbrain">OUTBRAIN</div>
 
-    <div class="cloud">
-      <div class="pub">USA TODAY</div>
-      <div class="pub">CBS</div>
-      <div class="pub">WEATHER CHANNEL</div>
-      <div class="pub">THE HINDU</div>
-      <div class="pub">INDIAN EXPRESS</div>
-    </div>
+    <div class="publisher p1">USA TODAY</div>
+    <div class="publisher p2">CBS</div>
+    <div class="publisher p3">WEATHER CHANNEL</div>
+    <div class="publisher p4">THE HINDU</div>
 
     <div class="node monetize">GOOGLE / YAHOO</div>
 
     <svg class="lines" viewBox="0 0 1200 420">
-      <path d="M220 210 C 340 210, 390 210, 470 210"
-            class="buy" marker-end="url(#arrow)"/>
-      <path d="M560 210 C 690 160, 760 150, 850 160"/>
-      <path d="M560 210 C 690 260, 760 270, 850 260"/>
-      <path d="M930 210 C 1030 210, 1080 210, 1150 210"
-            class="rev" marker-end="url(#arrow-green)"/>
+      <path d="M140 210 C 260 130, 360 140, 480 210" class="buy"/>
+      <text x="280" y="120" class="label buy-label">BUY TRAFFIC</text>
+
+      <path d="M760 120 C 860 180, 940 200, 1020 210"/>
+      <path d="M760 170 C 860 200, 940 210, 1020 210"/>
+      <path d="M760 240 C 860 230, 940 220, 1020 210"/>
+      <path d="M760 290 C 860 250, 940 230, 1020 210"/>
+
+      <path d="M1020 260 C 760 360, 360 360, 140 250" class="rev"/>
+      <text x="520" y="380" class="label rev-label">REV / PROFIT</text>
     </svg>
   </section>
 
-  <!-- ========== GOOGLE SEARCH (FIXED) ========== -->
-  <section class="flow search">
-    <div class="node source left">GOOGLE SEARCH</div>
-    <div class="node lincoln center">LINCOLN</div>
+  <!-- ===== GOOGLE ADS ===== -->
+  <section class="flow">
+    <div class="node lincoln">LINCOLN</div>
+    <div class="node source google">GOOGLE ADS</div>
+
+    <div class="sub s1">SEARCH</div>
+    <div class="sub s2">DISPLAY</div>
+    <div class="sub s3">PMAX</div>
+
     <div class="node monetize">GOOGLE / YAHOO</div>
 
-    <svg class="lines" viewBox="0 0 1200 260">
-      <!-- INTENT -->
-      <path d="M200 130 C 360 130, 430 130, 520 130"
-            marker-end="url(#arrow)"/>
-      <text x="330" y="110" class="label">USER INTENT</text>
+    <svg class="lines" viewBox="0 0 1200 420">
+      <path d="M140 210 C 260 120, 360 120, 480 200" class="buy"/>
+      <text x="260" y="120" class="label buy-label">BUY TRAFFIC</text>
 
-      <!-- REVENUE -->
-      <path d="M680 130 C 840 130, 940 130, 1100 130"
-            class="rev" marker-end="url(#arrow-green)"/>
-      <text x="850" y="110" class="label green">REV / PROFIT</text>
+      <path d="M1020 260 C 760 360, 360 360, 140 250" class="rev"/>
+      <text x="520" y="380" class="label rev-label">REV / PROFIT</text>
     </svg>
   </section>
 
