@@ -6,19 +6,18 @@
 }
 
 body {
-  background: radial-gradient(1200px 500px at 20% -10%, rgba(59,130,246,0.15), transparent),
-              #0b0e11;
+  background:
+    radial-gradient(1200px 500px at 20% -10%, rgba(59,130,246,0.18), transparent),
+    #0b0e11;
   color: #e5e7eb;
 }
 
-/* PAGE */
 .page {
   max-width: 1200px;
   margin: 60px auto;
   padding: 0 20px;
 }
 
-/* FLOW BLOCK */
 .flow {
   position: relative;
   height: 420px;
@@ -26,7 +25,7 @@ body {
 }
 
 .flow.search {
-  height: 300px;
+  height: 260px;
 }
 
 /* NODES */
@@ -36,16 +35,10 @@ body {
   border-radius: 999px;
   font-weight: 600;
   background: #111827;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.6);
   z-index: 2;
-  transition: transform 0.3s ease;
 }
 
-.node:hover {
-  transform: translateY(-4px);
-}
-
-/* LINCOLN */
 .lincoln {
   left: 40px;
   top: 190px;
@@ -56,22 +49,16 @@ body {
   left: 520px;
 }
 
-/* SOURCES */
 .source {
   left: 460px;
   top: 190px;
+}
+
+.source.left {
+  left: 40px;
   background: #0f172a;
 }
 
-.source img {
-  height: 22px;
-}
-
-.taboola img { height: 24px; }
-.outbrain img { height: 24px; }
-.google img { height: 26px; }
-
-/* MONETIZATION */
 .monetize {
   right: 40px;
   top: 190px;
@@ -81,23 +68,20 @@ body {
 .cloud {
   position: absolute;
   left: 740px;
-  top: 110px;
-  width: 260px;
+  top: 120px;
+  width: 300px;
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 14px;
   z-index: 2;
 }
 
-.cloud img {
-  height: 20px;
+.pub {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #020617;
+  font-size: 0.75rem;
   opacity: 0.85;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.cloud img:hover {
-  transform: translateY(-4px);
-  opacity: 1;
 }
 
 /* LINES */
@@ -110,7 +94,7 @@ body {
 .lines path {
   fill: none;
   stroke: #64748b;
-  stroke-width: 1.4;
+  stroke-width: 2;
 }
 
 .lines path.buy {
@@ -119,5 +103,15 @@ body {
 
 .lines path.rev {
   stroke: #22c55e;
-  stroke-width: 1.8;
+  stroke-width: 2.5;
+}
+
+/* LABELS */
+.label {
+  fill: #94a3b8;
+  font-size: 12px;
+}
+
+.label.green {
+  fill: #22c55e;
 }
